@@ -3,90 +3,81 @@
   <head>
     <title>Portfolio | Cecily Cunningham</title>
     <meta name="viewport" content="width=device-width, intial-scale=1">
-
-    <!-- Material Design Lite -->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-lime.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <header class="mdl-layout__header mdl-layout__header--transparent">
-      <h1>Cecily Cunningham</h1>
-      <p class="slogan">UX Designer from Indianapolis</p>
+    <header>
+      <a href="/index.html"><img src="/images/Personal Logo Final.png" alt="logo">
+      </a>
+      <a href="/about.html">ABOUT</a>
+      <a href="#projects-link">WORK</a>
     </header>
-    <main class="mdl-layout__content mdl-grid">
-
-      <div class="project featured-project mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-        <div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet">
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot">
-        </div>
-        <div class="mdl-cell mdl-cell--7-col">
-          <h2 class="mdl-card__title-text">Featured Project</h2>
-          <p class="project-description mdl-card__supporting-text">Project Description</p>
-        </div>
-      </div>
-
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-        <div>
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-2" alt="project screenshot">
-        </div>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Project Name</h2>
-        </div>
-        <div class="mdl-card__supporting-text">Project Description</div>
-      </div>
-
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-        <div>
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-3" alt="project screenshot">
-        </div>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Project Name</h2>
-        </div>
-        <div class="mdl-card__supporting-text">Project Description</div>
-      </div>
-
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-        <div>
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-4" alt="project screenshot">
-        </div>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Project Name</h2>
-        </div>
-        <div class="mdl-card__supporting-text">Project Description</div>
-      </div>
-
+    <main>
+      <article class="introduction">
+        <h1>Cecily Cunningham</h1>
+        <h2>UX Designer</h2>
+        <p class="intro">Based in Indianapolis, IN. I love to use fun, expressive design to connect and communicate with people around the world.</p>
+      </article>
+      <img src="/images/PROFILE PIC.png" alt="portrait">
+      <section>
+        <a name="projects-link"></a>
+        <h3>Projects</h3>
+        <article class="project-one">
+          <h4>Cloud Giant Storage</h4>
+          <h5>Research | Design</h5>
+          <article class="project-description">
+            <p>Assets for a Tabletop streaming show</p>
+          </article>
+          <button onclick="location.href='/project.html'" type="button" class="button">View Case Study</button>
+        </article>
+        <article class="project-two">
+          <h4>Bloc Jams</h4>
+          <h5>Coding</h5>
+          <article class="project-description">
+            <p>Assets for a Tabletop streaming show</p>
+          </article>
+          <button onclick="location.href='https://github.com/Soupsuka/bloc-jams-jquery'" type="button" class="button">GitHub</button>
+          <button onclick="location.href='https://bloc-jams-cecily-cunningham.netlify.com/'" type="button" class="button">Live Site</button>
+        </article>
+        <article class="project-three">
+          <h4>Laughing Dragon Inn</h4>
+          <h5>Design</h5>
+          <article class="project-description">
+            <p>Assets for a Tabletop streaming show</p>
+          </article>
+          <button onclick="location.href='http://www.example.com'" type="button" class="project-one-button">Asset Gallery</button>
+          <button onclick="location.href='https://www.youtube.com/channel/UCF2uJBgpGej6ngfrgpB_MdQ'" type="button" class="button">Youtube</button>
+        </article>
+      </section>
     </main>
-    <footer class="mdl-mini-footer">
-      <ul class="mdl-mini-footer__link-list">
+    <footer>
+      <h2>Let's Connect</h2>
+      <h3>!</h3>
+      <ul>
         <li>
           <a href="https://www.linkedin.com/in/cecilycunningham/">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <img src="/images/LinkedIn.png" alt="linkedin">
           </a>
         </li>
         <li>
           <a href="https://github.com/Soupsuka">
-            <i class="fa fa-github-square" aria-hidden="true"></i>
+            <img src="/images/GitHub.png" alt="github">
           </a>
         </li>
         <li>
           <a href="https://www.facebook.com/cecilycunningham?ref=bookmarks">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <img src="/images/Facebook.png" alt="facebook">
           </a>
         </li>
         <li>
           <a href="https://twitter.com/Soupsuka">
-            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <img src="/images/Twitter.png" alt="twitter">
           </a>
         </li>
         <li>
           <a href="mailto:soupsuka@gmail.com">
-            <i class="fa fa-envelope-square" aria-hidden="true"></i>
+            <img src="/images/Mail.png" alt="mail">
           </a>
         </li>
       </ul>
