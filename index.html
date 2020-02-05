@@ -4,78 +4,83 @@
     <title>Portfolio Home Page | Cecily Cunningham</title>
     <meta name="viewport" content="width=device-width, intial-scale=1">
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <a href="/index.html"><img src="/images/Personal Logo Final.png" alt="logo"></a>
-      <ul>
-        <li><a href="/about.html">ABOUT</a></li>
-        <li><a href="#projects-link">WORK</a></li>
-        <li><a href=>CONTACT</a></li>
-      </ul>
-    </header>
-    <main>
-      <article class="introduction">
-        <h1>Cecily Cunningham</h1>
-        <h2>UX Designer</h2>
-        <p class="intro">Based in Indianapolis, IN. I love to use fun, expressive design to connect and communicate with people around the world.</p>
-        <img src="/images/PROFILE PIC.png" alt="portrait">
-      </article>
-      <section>
-        <a name="projects-link"></a>
-        <h3>Projects</h3>
-        <article class="project-one">
-          <h4>Cloud Giant Storage</h4>
-          <h5>Research | Design</h5>
-          <p class="project-description">A Cloud Storage Website and App designed for Tabletop Gamers</p>
-          <button onclick="location.href='/project.html'" type="button" class="button">View Case Study</button>
-        </article>
-        <article class="project-two">
-          <h4>Bloc Jams</h4>
-          <h5>Coding</h5>
-          <p class="project-description">A music player app written using jQuery</p>
-          <button onclick="location.href='https://github.com/Soupsuka/bloc-jams-jquery'" type="button" class="button">GitHub</button>
-          <button onclick="location.href='https://bloc-jams-cecily-cunningham.netlify.com/'" type="button" class="button">Live Site</button>
-        </article>
-        <article class="project-three">
-          <h4>Laughing Dragon Inn</h4>
-          <h5>Design</h5>
-          <p class="project-description">Assets for a Tabletop streaming show</p>
-          <button onclick="location.href='http://www.example.com'" type="button" class="project-one-button">Asset Gallery</button>
-          <button onclick="location.href='https://www.youtube.com/channel/UCF2uJBgpGej6ngfrgpB_MdQ'" type="button" class="button">Youtube</button>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <h2>Let's Connect<span>!</span></h2>
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/cecilycunningham/">
-            <img src="/images/LinkedIn.png" alt="linkedin">
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Soupsuka">
-            <img src="/images/GitHub.png" alt="github">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/cecilycunningham?ref=bookmarks">
-            <img src="/images/Facebook.png" alt="facebook">
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/Soupsuka">
-            <img src="/images/Twitter.png" alt="twitter">
-          </a>
-        </li>
-        <li>
-          <a href="mailto:soupsuka@gmail.com">
-            <img src="/images/Mail.png" alt="mail">
-          </a>
-        </li>
-      </ul>
-    </footer>
+    <div class="container">
+      <header>
+        <a href="/index.html"><img src="/images/Personal Logo Final.png" alt="logo"></a>
+        <ul>
+          <li><a href="/about.html">ABOUT</a></li>
+          <li><a href="#projects-link">WORK</a></li>
+          <li><a href=>CONTACT</a></li>
+        </ul>
+      </header>
+      <main>
+        <section class="hero">
+          <article class="intro">
+            <h1>Cecily Cunningham</h1>
+            <h2>UX Designer</h2>
+            <h3>Based in Indianapolis, IN. I love to use fun, expressive design to connect and communicate with people around the world.</h3>
+          </article>
+          <img src="/images/profile pic.png" alt="portrait">
+        </section>
+        <section>
+          <a name="projects-link"></a>
+          <h1>Projects</h1>
+          <article class="project-one">
+            <h1>Cloud Giant Storage</h1>
+            <h2>Research | Design</h2>
+            <h3>A Cloud Storage Website and App designed for Tabletop Gamers</h3>
+            <button onclick="location.href='/project.html'" type="button" class="button">View Case Study</button>
+          </article>
+          <article class="project-two">
+            <h1>Bloc Jams</h1>
+            <h2>Coding</h2>
+            <h3>A music player app written using jQuery</h3>
+            <button onclick="location.href='https://github.com/Soupsuka/bloc-jams-jquery'" type="button" class="button">GitHub</button>
+            <button onclick="location.href='https://bloc-jams-cecily-cunningham.netlify.com/'" type="button" class="button">Live Site</button>
+          </article>
+          <article class="project-three">
+            <h1>Laughing Dragon Inn</h1>
+            <h2>Design</h2>
+            <h3>Assets for a Tabletop streaming show</h3>
+            <button onclick="location.href='http://www.example.com'" type="button" class="project-one-button">Asset Gallery</button>
+            <button onclick="location.href='https://www.youtube.com/channel/UCF2uJBgpGej6ngfrgpB_MdQ'" type="button" class="button">Youtube</button>
+          </article>
+        </section>
+      </main>
+      <footer>
+        <h2>Let's Connect<span>!</span></h2>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/cecilycunningham/">
+              <img src="/images/LinkedIn.png" alt="linkedin">
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Soupsuka">
+              <img src="/images/GitHub.png" alt="github">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/cecilycunningham?ref=bookmarks">
+              <img src="/images/Facebook.png" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Soupsuka">
+              <img src="/images/Twitter.png" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="mailto:soupsuka@gmail.com">
+              <img src="/images/Mail.png" alt="mail">
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>
