@@ -9,32 +9,40 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <a href="/index.html"><img src="/images/Personal Logo Final.png" alt="logo"></a>
-        <ul>
+      <!-- navbar -->
+      <nav class="navbar">
+        <a href="/index.html" class="logo"><img src="/images/Personal Logo Final.png" alt="logo"></a>
+        <a href="javascript:void(0);" class="icon" onclick="dropDown()">
+          <div class="hmenu-container" onclick="hMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </a>
+        <ul id=nav-links>
           <li><a href="/about.html">ABOUT</a></li>
-          <li><a href="index.html#projects-link">WORK</a></li>
+          <li><a href="/index.html#projects-link">WORK</a></li>
           <li><a href=>CONTACT</a></li>
         </ul>
-      </header>
+      </nav>
       <main>
-        <section>
-          <img src="/images/PROFILE PIC.png" alt="portrait">
-          <article class="about-me">
-            <h3>About Me:</h3>
-            <h3>Cecily Cunningham</h3>
+        <section class="about-me">
+          <img src="/images/about me pic.jpg" alt="about portrait">
+          <article class="about-text">
+            <h1>About Me:</h1>
+            <h1>Cecily Cunningham</h1>
             <blockquote>
-              <p>If communication is key, design is my first language.</p>
+              <h5>If communication is key, design is my first language.</h5>
             </blockquote>
             <p>Art, design, and research have been constant companions of mine throughtout my life. After graduating college, I was lucky enough to be given the chance to chase a dream of mine: to live in Japan. However, upon moving there, I quickly discovered that my less-than-fluent Japanese skills made communication an issue I had to consider constantly. I thought about it everywhere, from the grocery store to the bus to my classroom where I taught English.</p>
             <blockquote>
-              <p>I needed to find a new way to communicate.</p>
+              <h5>I needed to find a new way to communicate.</h5>
             </blockquote>
             <p>Looking around my new environment, inspiration struck. The same visual language I used as an artist was being used all around me. Japan is a country built on visual communication, and it’s used liberally so much can be understood without a word being spoken. I had my way of communicating, and it was in a language I knew well.</p>
             <p>As I’ve navigated my UX journey, I’ve found myself thinking back not only to my artistic experience, but to the lessons about communication I learned in Japan. My experiences in Japan continue to inspire me to be a better designer, and remind me that design isn’t just a tool to make things look cool and interesting. Design can also be a tool for communication, whether the person you’re communicating with speaks your language or not. I want to use my design skills to help ease the use of websites and apps for people around the world, as well as make some stuff that looks pretty dang cool.</p>
             <blockquote>
-              <p>Want to communicate with me?</p>
-              <p>Connect with me anytime, anywhere.</p>
+              <h5>Want to communicate with me?</h5>
+              <h5>Connect with me anytime, anywhere.</h5>
             </blockquote>
           </article>
         </section>
@@ -70,5 +78,7 @@
         </ul>
       </footer>
     </div>
+    <!-- scripts -->
+    <script src="scripts/navbar.js"></script>
   </body>
 </html>

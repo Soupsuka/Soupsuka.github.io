@@ -9,46 +9,56 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <a href="/index.html"><img src="/images/Personal Logo Final.png" alt="logo"></a>
-        <ul>
+      <!-- navbar -->
+      <nav class="navbar">
+        <a href="/index.html" class="logo"><img src="/images/Personal Logo Final.png" alt="logo"></a>
+        <a href="javascript:void(0);" class="icon" onclick="dropDown()">
+          <div class="hmenu-container" onclick="hMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </a>
+        <ul id=nav-links>
           <li><a href="/about.html">ABOUT</a></li>
           <li><a href="#projects-link">WORK</a></li>
           <li><a href=>CONTACT</a></li>
         </ul>
-      </header>
+      </nav>
       <main>
+        <!-- hero -->
         <section class="hero">
           <article class="intro">
             <h1>Cecily Cunningham</h1>
-            <h2>UX Designer</h2>
-            <h3>Based in Indianapolis, IN. I love to use fun, expressive design to connect and communicate with people around the world.</h3>
+            <h4>UX Designer</h4>
+            <h5>Based in Indianapolis, IN. I love to use fun, expressive design to connect and communicate with people around the world.</h5>
           </article>
           <img src="/images/profile pic.png" alt="portrait">
         </section>
-        <section>
+        <!-- projects -->
+        <section class="projects">
           <a name="projects-link"></a>
-          <h1>Projects</h1>
-          <article class="project-one">
-            <h1>Cloud Giant Storage</h1>
-            <h2>Research | Design</h2>
-            <h3>A Cloud Storage Website and App designed for Tabletop Gamers</h3>
-            <button onclick="location.href='/project.html'" type="button" class="button">View Case Study</button>
-          </article>
-          <article class="project-two">
-            <h1>Bloc Jams</h1>
-            <h2>Coding</h2>
-            <h3>A music player app written using jQuery</h3>
-            <button onclick="location.href='https://github.com/Soupsuka/bloc-jams-jquery'" type="button" class="button">GitHub</button>
-            <button onclick="location.href='https://bloc-jams-cecily-cunningham.netlify.com/'" type="button" class="button">Live Site</button>
-          </article>
-          <article class="project-three">
-            <h1>Laughing Dragon Inn</h1>
-            <h2>Design</h2>
-            <h3>Assets for a Tabletop streaming show</h3>
-            <button onclick="location.href='http://www.example.com'" type="button" class="project-one-button">Asset Gallery</button>
-            <button onclick="location.href='https://www.youtube.com/channel/UCF2uJBgpGej6ngfrgpB_MdQ'" type="button" class="button">Youtube</button>
-          </article>
+          <h2>Projects</h2>
+          <a href="/project.html">
+            <article class="project-one">
+              <h2>Cloud Giant Storage</h2>
+              <h4>Research | Design</h4>
+              <h5>A Cloud Storage Website and App designed for Tabletop Gamers</h5>
+            </article>
+          </a>
+          <a href="https://bloc-jams-cecily-cunningham.netlify.com/">
+            <article class="project-two">
+              <h2>Bloc Jams</h2>
+              <h4>Coding</h4>
+              <h5>A music player app written using jQuery</h5>
+            </article>
+          </a>
+          <a href="https://www.youtube.com/channel/UCF2uJBgpGej6ngfrgpB_MdQ">
+            <article class="project-three">
+              <h2>Laughing Dragon Inn</h2>
+              <h4>Design</h4>
+              <h5>Assets for a Tabletop streaming show</h5>
+            </article></a>
         </section>
       </main>
       <footer>
@@ -82,5 +92,7 @@
         </ul>
       </footer>
     </div>
+    <!-- scripts -->
+    <script src="scripts/navbar.js"></script>
   </body>
 </html>
