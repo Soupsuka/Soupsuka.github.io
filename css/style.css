@@ -5,6 +5,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -17,35 +18,27 @@ body {
 }
 
 /* structure */
-main {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fcfcfc;
   color: #1E0620;
-  margin: 2rem 0;
 }
 
 article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* display: grid;
-  grid-template-rows: auto;
-  grid-row-gap: 2rem; */
-  padding: 2rem 1.6rem;
-  /* margin: 2rem 0; */
+  padding: 4rem 1.6rem;
 }
 
 img {
   margin: 2rem 1.6rem;
+}
+
+article.section-intro {
+  padding: 4rem 1.6rem;
 }
 
 .button {
@@ -53,7 +46,7 @@ img {
   border-radius: 3rem;
   color: #fcfcfc;
   height: 6rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
   line-height: 1.8rem;
   padding: 2.1rem 2rem;
   text-align: center;
@@ -95,7 +88,6 @@ h4 {
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 3rem;
-  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -105,7 +97,7 @@ h5 {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 3rem;
-  margin: 2rem 1.6rem;
+  margin: 0rem 1.6rem;
   text-align: center;
 }
 
@@ -121,7 +113,6 @@ li {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.6rem;
   line-height: 3rem;
-  margin: ;
   text-align: left;
 }
 
@@ -152,6 +143,7 @@ li {
 .intro h5 {
   color: #fcfcfc;
   text-align: left;
+  margin: 1rem 1.6rem;
 }
 
 .projects h2 {
@@ -269,7 +261,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 4rem;
+  margin: 2rem;
 }
 
 footer h4 {
@@ -277,6 +269,7 @@ footer h4 {
   font-weight: bold;
   display: flex;
   justify-content: center;
+  padding-top: 2rem;
 }
 
 .exclaim {
@@ -296,16 +289,20 @@ footer img {
 
 /* index.html */
 section.hero {
-  background: linear-gradient(180deg, #581E59 0%, #260126 100%), url("/images/screentone.png") no-repeat;
-  background-blend-mode: hard-light, normal;
+  background: url("/images/purple-screentone.png") no-repeat;
   background-color: #fcfcfc;
+  background-size: cover;
   color: #fcfcfc;
   margin: 0;
-  padding: 4rem 0;
+  padding: 4rem 0 43rem;
+  position: relative;
 }
 
 .hero img {
-  width: 34.3rem;
+  bottom: -2rem;
+  margin: 0;
+  position: absolute;
+  width: 91.5%;
 }
 
 .intro {
@@ -313,16 +310,22 @@ section.hero {
   display: flex;
 }
 
+section.projects {
+  margin: 8rem 0 2rem;
+}
+
 .projects article {
   height: 35rem;
   margin: 1rem 1.6rem;
+  padding: 2rem 1.6rem;
 }
 
-.project-one {
+article.project-one {
   background-color: #54ACBF;
   background-image: url("/images/Cloud Giant Logo 2.png");
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: 3rem;
 }
 
 .project-two {
@@ -332,18 +335,31 @@ section.hero {
 
 .project-three {
   background-color: #7ED9A5;
-  background-image: url("/images/LDI.png");
+  background: url("../images/laughing.png") bottom no-repeat, #7ED9A5;
 }
 
 /* about me */
+section.about-me {
+  background: url("/images/purple-screentone.png") top no-repeat, url("/images/green-screentone.png") bottom no-repeat;
+  background-color: #fcfcfc;
+  background-size: 270rem;
+  margin: 6rem 0 4rem 0;
+  padding: 42rem 0 4rem 0;
+  position: relative;
+}
+
 .about-me img {
-  width: 34.3rem;
+  margin: 0;
+  position: absolute;
+  top: -2rem;
+  width: 91.5%;
 }
 
 .about-text {
   background-color: #f2f2f2;
   box-shadow: 0px 4px 4px rgba(30, 6, 32, 0.25), 0px -1px 4px rgba(30, 6, 32, 0.25);
-  margin: 2rem 1.6rem;
+  margin: 0 1.6rem;
+  padding: 4rem 1.6rem;
 }
 
 /* project */
@@ -362,21 +378,33 @@ section.hero {
   padding: 0 0;
 }
 
-.white-box .grey-box .blue-box {
-  padding: 1.6rem 4rem;
-  margin: 1.6rem 4rem;
-}
-
 .blue-box {
   background-color: #BBDDE4;
+  padding: 44rem 0rem 0rem;
+  position: relative;
+}
+
+.img-only {
+  background-color: #F2F2F2;
+  padding: 2rem 1.6rem;
+  margin: 0;
+}
+
+.img-only img {
+  margin: 0;
+  padding: 2rem 0;
+  width: 100%;
 }
 
 .blue-box img {
-  width: 34.3rem;
+  top: -4rem;
+  margin: 0;
+  position: absolute;
+  width: 91.5%;
 }
 
 .grey-box img {
-  width: 31.1rem;
+  width: 91.5%;
 }
 
 .grey-box {
@@ -387,6 +415,84 @@ section.hero {
   background-color: #F2F2F2;
   margin: 2rem 1.6rem;
   padding: 2rem 1.6rem;
+}
+
+.xtab {
+  background: url('../images/xtab.png') left top no-repeat;
+  background-size: 3rem auto;
+  min-height: 3rem;
+  padding-left: 3.2rem;
+}
+
+.extab {
+  background: url('../images/exclaimtab.png') left top no-repeat;
+  background-size: 3rem auto;
+  min-height: 3.5rem;
+  padding-left: 3.2rem;
+}
+
+.checktab {
+  background: url('../images/checktab.png') left top no-repeat;
+  background-size: 3rem auto;
+  min-height: 3.5rem;
+  padding-left: 3.2rem;
+}
+
+.full-width {
+  padding: 0;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.bar-graph {
+  width: 100%;
+}
+
+.bar-graph li {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.bar-graph li p {
+  align-items: center;
+  display: flex;
+  font-weight: 600;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+}
+
+.bar-graph li p span {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 80px;
+  padding-right: 1rem;
+}
+
+.bar-graph li::before {
+  background: linear-gradient(270deg, #A7F2EB 0%, #B0E7C8 100%);
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.bar-graph li.percent-40::before {
+  width: 40%;
+}
+
+.bar-graph li.percent-45::before {
+  width: 45%;
+}
+
+.bar-graph li.percent-55::before {
+  width: 55%;
+}
+
+.bar-graph li.percent-80::before {
+  width: 80%;
 }
 
 .storage-logos img {
@@ -402,6 +508,18 @@ section.hero {
 .personas-pic {
   height: 20rem;
   width: 20rem;
+}
+
+.personas-name h4 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 2rem;
+}
+
+.personas-info h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 2rem;
 }
 
 ol {
@@ -420,6 +538,51 @@ ol {
 
 #cgs-mockups {
   width: 27.5rem;
+}
+
+/* contact */
+section.form {
+  background-color: #f2f2f2;
+  box-shadow: 0px 4px 4px rgba(30, 6, 32, 0.25), 0px -1px 4px rgba(30, 6, 32, 0.25);
+  margin: 4rem 1.6rem;
+  padding: 4rem 1.6rem;
+}
+
+label {
+  color: #1E0620;
+  display: block;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3rem;
+  text-align: left;
+}
+
+input {
+  min-height: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+textarea {
+  min-height: 20rem;
+  width: 100%;
+}
+
+button {
+  background-color: #581E59;
+  border-radius: 3rem;
+  color: #fcfcfc;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  height: 6rem;
+  margin: 2rem 0;
+  line-height: 1.8rem;
+  padding: 2.1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  width: 20rem;
 }
 
 /*desktop*/
