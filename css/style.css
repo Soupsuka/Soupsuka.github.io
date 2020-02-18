@@ -322,14 +322,14 @@ section.projects {
 
 article.project-one {
   background-color: #54ACBF;
-  background-image: url("/images/Cloud Giant Logo 2.png");
+  background-image: url("/images/cloud-giant-logo-2.png");
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 3rem;
 }
 
 .project-two {
-  background: linear-gradient(180deg, #581E59 0%, rgba(88, 30, 89, 0.25) 100%), linear-gradient(0deg, #581E59, #581E59), url("/images/Blocjams Code.png");
+  background: linear-gradient(180deg, #581E59 0%, rgba(88, 30, 89, 0.25) 100%), linear-gradient(0deg, #581E59, #581E59), url("/images/blocjams-code.png");
   background-blend-mode: normal, overlay, normal;
 }
 
