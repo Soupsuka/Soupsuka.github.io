@@ -368,20 +368,29 @@ section.about-me {
   background-blend-mode: darken;
   margin: 0;
   padding: 6rem 1.6rem;
+  position: relative;
 }
 
 .cgs-header img {
-  margin: 0 3.6rem;
+  margin: 0;
+  position: absolute;
+  width: 80%;
 }
 
-.project-description {
-  padding: 0 0;
+article.project-description {
+  padding: 26rem 0 4rem;
+  position: relative;
+}
+
+.project-description h5 {
+  margin-top: 4rem;
 }
 
 .blue-box {
   background-color: #BBDDE4;
   padding: 44rem 0rem 0rem;
   position: relative;
+  margin: 6rem 0 0;
 }
 
 .img-only {
@@ -524,7 +533,13 @@ section.about-me {
 
 ol {
   align-items: flex-start;
+  list-style: decimal;
   margin: 1.6rem 2rem;
+  text-align: left;
+}
+
+.personas-quote {
+  margin: 2rem 0rem;
 }
 
 .thin-image {
@@ -533,19 +548,20 @@ ol {
 }
 
 .thin-image img {
-  width: 34.3rem;
-}
-
-#cgs-mockups {
-  width: 27.5rem;
+  width: 91.5%;
 }
 
 /* contact */
+section.contact-intro {
+  padding: 8rem 1.6rem 4rem;
+}
+
 section.form {
   background-color: #f2f2f2;
   box-shadow: 0px 4px 4px rgba(30, 6, 32, 0.25), 0px -1px 4px rgba(30, 6, 32, 0.25);
-  margin: 4rem 1.6rem;
-  padding: 4rem 1.6rem;
+  display: block;
+  margin: 4rem 1.6rem 8rem;
+  padding: 2rem 1.6rem;
 }
 
 label {
@@ -555,18 +571,27 @@ label {
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 3rem;
+  margin-top: 2rem;
   text-align: left;
 }
 
 input {
-  min-height: 2rem;
-  position: relative;
   width: 100%;
+  padding: 1.2rem 2rem;
+  margin: .8rem 0;
+  box-sizing: border-box;
 }
 
 textarea {
   min-height: 20rem;
   width: 100%;
+  padding: 1.2rem 2rem;
+  margin: .8rem 0;
+  box-sizing: border-box;
+}
+
+.button-container {
+  text-align: center;
 }
 
 button {
@@ -582,7 +607,9 @@ button {
   padding: 2.1rem 2rem;
   text-align: center;
   text-decoration: none;
+  -webkit-appearance: none;
   width: 20rem;
+  border: 0;
 }
 
 /*desktop*/
