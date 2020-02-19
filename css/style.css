@@ -34,6 +34,8 @@ article {
 }
 
 img {
+  width: 100%;
+  height: auto;
   margin: 2rem 1.6rem;
 }
 
@@ -305,7 +307,7 @@ section.hero {
   width: 91.5%;
 }
 
-.intro {
+article.intro {
   align-items: flex-start;
   display: flex;
 }
@@ -613,8 +615,57 @@ button {
 }
 
 /*desktop*/
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1440px) {
+  /* structure */
+  .container {
+  }
 
+  main {
+    padding: 0 8rem;
+  }
+
+/* index */
+  section.hero {
+    background: url("/images/purple-screentone.png") no-repeat;
+    background-color: #fcfcfc;
+    background-size: cover;
+    color: #fcfcfc;
+    display: block;
+    margin: 8rem 0;
+    padding: 10rem 6rem 10rem 4.4rem;
+    position: relative;
+  }
+
+  article.intro {
+    margin-right: 60rem;
+    padding: 0;
+  }
+
+  .intro h1 {
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .intro h4 {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
+
+  .intro h5 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 4rem;
+  }
+
+  .hero img {
+    bottom: -4rem;
+    right: 6rem;
+    top: -4rem;
+    width: 34.5%;
+  }
+
+  
 }
 
 /*tablet*/
