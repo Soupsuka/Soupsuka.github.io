@@ -97,7 +97,7 @@ h5 {
   color: #1E0620;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 3rem;
   margin: 0rem 1.6rem;
   text-align: center;
@@ -184,7 +184,7 @@ nav {
 }
 
 nav img {
-  width: 8rem;
+  width: 27%;
   margin: 0;
 }
 
@@ -224,7 +224,7 @@ a.icon {
   padding: 2rem;
   text-decoration: none;
   text-align: center;
-  font-size: 17px;
+  font-size: 16px;
   display: block;
 }
 
@@ -614,36 +614,166 @@ button {
   border: 0;
 }
 
+/*tablet*/
+@media screen and (min-width: 768px) {
+  /* structure */
+
+  /* index */
+    section.hero {
+      background: url("/images/purple-screentone.png") no-repeat;
+      background-color: #fcfcfc;
+      background-size: cover;
+      color: #fcfcfc;
+      display: block;
+      margin: 8rem 0;
+      padding: 5rem 4rem 5rem 2.4rem;
+      position: relative;
+    }
+
+    article.intro {
+      margin-right: 30rem;
+      padding: 0;
+    }
+
+    .intro h1 {
+      margin-bottom: 2rem;
+    }
+
+    .intro h5 {
+      margin-top: 2rem;
+    }
+
+    .hero img {
+      bottom: -3rem;
+      right: 4rem;
+      top: -3rem;
+      width: 43.5%;
+    }
+
+    section.projects {
+      display: grid;
+      grid-column-gap: 2rem;
+      grid-row-gap: 2rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "header header"
+      "projone projone"
+      "projtwo projthree";
+      margin-top: 14rem;
+    }
+
+    .projects h2 {
+      grid-area: header;
+    }
+
+    .proj-one-link {
+      grid-area: projone;
+    }
+
+    .proj-two-link {
+      grid-area: projtwo;
+    }
+
+    .proj-three-link {
+      grid-area: projthree;
+    }
+
+    .projects article {
+      height: 100%;
+      margin: 0;
+    }
+
+    .projects article h5 {
+      margin: 2rem 1.6rem 0;
+    }
+
+    article.project-one {
+      align-items: flex-start;
+      background-color: #54ACBF;
+      background-image: url("/images/cloud-giant-logo.png");
+      background-position: 92%;
+      background-repeat: no-repeat;
+      background-size: 25%;
+      padding: 4rem;
+    }
+
+    article.project-one h5 {
+      text-align: left;
+      margin: 2rem 0 0;
+      width: 50%;
+    }
+
+    article.project-two, article.project-three {
+      padding: 4rem 1rem;
+    }
+
+    /* navbar */
+    a.logo {
+      margin: 2rem 4rem;
+    }
+
+    a.icon {
+      margin: 2rem 4rem;
+    }
+}
+
 /*desktop*/
 @media screen and (min-width: 1440px) {
   /* structure */
   .container {
   }
 
-  main {
-    padding: 0 8rem;
+  section {
+    margin: 0 8rem;
   }
 
-/* index */
+  /* typography */
+  h1 {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  h4 {
+    font-size: 3rem;
+  }
+
+  h5 {
+    font-weight: 600;
+  }
+
+  p {
+    margin: 2rem 0;
+  }
+
+  /* index */
   section.hero {
     background: url("/images/purple-screentone.png") no-repeat;
     background-color: #fcfcfc;
     background-size: cover;
     color: #fcfcfc;
     display: block;
-    margin: 8rem 0;
+    margin: 8rem;
     padding: 10rem 6rem 10rem 4.4rem;
     position: relative;
   }
 
   article.intro {
-    margin-right: 60rem;
+    margin-right: 54rem;
     padding: 0;
   }
 
   .intro h1 {
-    font-size: 5.6rem;
-    line-height: 5.6rem;
     margin-bottom: 2rem;
   }
 
@@ -655,7 +785,7 @@ button {
   .intro h5 {
     font-size: 3rem;
     font-weight: 400;
-    margin-top: 4rem;
+    margin: 4rem 8rem 0 1.6rem;
   }
 
   .hero img {
@@ -665,10 +795,420 @@ button {
     width: 34.5%;
   }
 
-  
-}
+  section.projects {
+    display: grid;
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header"
+    "projone projone"
+    "projtwo projthree"
+    ;
+    margin: 14rem 8rem 0rem;
+  }
 
-/*tablet*/
-@media screen and (min-width: 768px) {
+  .projects h2 {
+    grid-area: header;
+  }
 
+  .proj-one-link {
+    grid-area: projone;
+  }
+
+  .proj-two-link {
+    grid-area: projtwo;
+  }
+
+  .proj-three-link {
+    grid-area: projthree;
+  }
+
+  .projects article {
+    height: 100%;
+    margin: 0;
+  }
+
+  .projects article h2 {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+  }
+
+  .projects article h4 {
+    font-size: 3rem;
+  }
+
+  .projects article h5 {
+    font-size: 2.4rem;
+    margin: 4rem 0 0;
+  }
+
+  article.project-one {
+    align-items: flex-start;
+    background-color: #54ACBF;
+    background-image: url("/images/cloud-giant-logo.png");
+    background-position: 82%;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    padding: 10.2rem 18rem;
+  }
+
+  .project-one h5 {
+    text-align: left;
+    width: 50%;
+  }
+
+  article.project-two, article.project-three {
+    padding: 11.7rem 0rem;
+  }
+
+  /* navigation bar */
+  nav {
+    background-color: #fcfcfc;
+    display: block;
+  }
+
+  nav img {
+    width: 50%;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  a.logo {
+    display: inline-block;
+    margin: 3rem 8rem;
+    text-align: left;
+  }
+
+  .navbar {
+    display: flex;
+    background-color: #fcfcfc;
+    justify-content: space-between;
+    overflow: visible;
+    position: relative;
+  }
+
+  .navbar #nav-links {
+    align-items: center;
+    background-color: #fcfcfc;
+    display: flex;
+    margin: 0 4rem;
+  }
+
+  #nav-links a {
+    color: #1E0620;
+    padding: 2rem 4rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    display: block;
+  }
+
+  /* hamburger menu styling */
+  .hmenu-container {
+    display: none;
+  }
+
+  /* footer */
+  footer h4 {
+    font-size: 3.6rem;
+    padding-top: 4rem;
+  }
+
+  .exclaim {
+    font-size: 3.6rem;
+  }
+
+  footer img {
+    height: 4rem;
+    margin: 4rem 2rem;
+    width: 4rem;
+  }
+
+  /* about me */
+  section.about-me {
+    background: url("/images/purple-screentone.png") top no-repeat, url("/images/green-screentone.png") bottom no-repeat;
+    background-color: #fcfcfc;
+    background-size: 75%;
+    margin: 6rem 0 4rem 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .about-me img {
+    bottom: -4rem;
+    left: 6rem;
+    top: -4rem;
+    width: 34.5%;
+  }
+
+  .about-text {
+    margin: 0 44rem 0 4rem;
+    padding: 4rem 5rem;
+    position: relative;
+  }
+
+  /* project */
+  .cgs-main {
+    display: grid;
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "cgs-header cgs-header"
+    "summary summary"
+    "problems considerations"
+    "solutions solutions"
+    "blue-box blue-box"
+    "research research"
+    "branding branding"
+    "design design"
+    "conclusion conclusion"
+    ;
+  }
+
+  .cgs-header {
+    grid-area: cgs-header;
+    margin: 0;
+  }
+
+  .summary {
+    grid-area: summary;
+  }
+
+  .problems {
+    background-color: #f2f2f2;
+    grid-area: problems;
+    margin: 2rem 0 2rem 8rem;
+  }
+
+  .considerations {
+    grid-area: considerations;
+    margin: 2rem 8rem 2rem 0;
+  }
+
+  .solutions {
+    grid-area: solutions;
+  }
+
+  .blue-box {
+    grid-area: blue-box;
+  }
+
+  .user-research {
+    grid-area: research;
+  }
+
+  .branding {
+    grid-area: branding;
+  }
+
+  .ux-design {
+    grid-area: design;
+  }
+
+  .conclusion {
+    grid-area: conclusion;
+  }
+
+  .cgs-header img {
+    width: 39%;
+  }
+
+  article.project-description {
+    padding: 50rem 0 4rem;
+    position: relative;
+  }
+
+  .project-description h5 {
+    margin-top: 4rem;
+  }
+
+  .white-box {
+    padding: 6rem 24rem;
+  }
+
+  .summary-underline {
+    background-color: #1E0620;
+    height: .3rem;
+    width: 61rem;
+  }
+
+  .blue-box {
+    background-color: #BBDDE4;
+    padding: 0rem 0rem 0rem 57rem;
+    position: relative;
+    margin: 6rem 0 0;
+  }
+
+  article.why-ttrpgs {
+    align-items: flex-start;
+    padding: 4rem 22rem 4rem 0;
+  }
+
+  article.section-intro {
+    padding: 4rem 23.8rem;
+  }
+
+  .img-only {
+    background-color: #F2F2F2;
+    padding: 2rem 1.6rem;
+    margin: 0;
+  }
+
+  .img-only img {
+    margin: 0;
+    padding: 2rem 0;
+    width: 100%;
+  }
+
+  .blue-box img {
+    bottom: -4rem;
+    left: 6rem;
+    top: -4rem;
+    width: 31%;
+  }
+
+  .grey-box img {
+    width: 91.5%;
+  }
+
+  .grey-box {
+    background-color: #F2F2F2;
+  }
+
+  .grey-card {
+    background-color: #F2F2F2;
+    margin: 0;
+    padding: 4rem 5rem;
+  }
+
+  .xtab {
+    background: url('../images/xtab.png') left top no-repeat;
+    background-size: 3rem auto;
+    min-height: 3rem;
+    padding-left: 3.2rem;
+  }
+
+  .extab {
+    background: url('../images/exclaimtab.png') left top no-repeat;
+    background-size: 3rem auto;
+    min-height: 3.5rem;
+    padding-left: 3.2rem;
+  }
+
+  .checktab {
+    background: url('../images/checktab.png') left top no-repeat;
+    background-size: 3rem auto;
+    min-height: 3.5rem;
+    padding-left: 3.2rem;
+  }
+
+  .full-width {
+    padding: 0;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+
+  .bar-graph {
+    width: 100%;
+  }
+
+  .bar-graph li {
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .bar-graph li p {
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+  }
+
+  .bar-graph li p span {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 80px;
+    padding-right: 1rem;
+  }
+
+  .bar-graph li::before {
+    background: linear-gradient(270deg, #A7F2EB 0%, #B0E7C8 100%);
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .bar-graph li.percent-40::before {
+    width: 40%;
+  }
+
+  .bar-graph li.percent-45::before {
+    width: 45%;
+  }
+
+  .bar-graph li.percent-55::before {
+    width: 55%;
+  }
+
+  .bar-graph li.percent-80::before {
+    width: 80%;
+  }
+
+  .storage-logos img {
+    width: 7rem;
+  }
+
+  .storage-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .personas-pic {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .personas-name h4 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 2rem;
+  }
+
+  .personas-info h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 2rem;
+  }
+
+  ol {
+    align-items: flex-start;
+    list-style: decimal;
+    margin: 1.6rem 2rem;
+    text-align: left;
+  }
+
+  .personas-quote {
+    margin: 2rem 0rem;
+  }
+
+  .thin-image {
+    margin: 0;
+    padding: 0;
+  }
+
+  .thin-image img {
+    width: 91.5%;
+  }
 }
