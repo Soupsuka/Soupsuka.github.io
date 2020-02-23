@@ -236,7 +236,7 @@ a.icon {
 .bar1, .bar2, .bar3 {
   width: 3.5rem;
   height: .5rem;
-  background-color: #333;
+  background-color: #1E0620;
   margin: .6rem 0;
   transition: 0.4s;
 }
@@ -559,20 +559,32 @@ ol {
 }
 
 /* contact */
-section.contact-intro {
-  padding: 8rem 1.6rem 4rem;
+section.contact {
+  background: url("../images/green-screentone.png") bottom no-repeat;
+  background-color: #fcfcfc;
+  background-size: 365%;
+}
+
+article.contact-intro {
+  background-color: #fcfcfc;
+  padding: 4rem 1.6rem;
 }
 
 .contact-intro a  {
   text-decoration: underline;
 }
 
-section.form {
+.contact-intro h5  {
+  padding-top: 2rem;
+}
+
+article.form {
   background-color: #f2f2f2;
   box-shadow: 0px 4px 4px rgba(30, 6, 32, 0.25), 0px -1px 4px rgba(30, 6, 32, 0.25);
   display: block;
-  margin: 4rem 1.6rem 8rem;
+  margin: 4rem 1.6rem;
   padding: 2rem 1.6rem;
+  width: 91%
 }
 
 label {
@@ -587,18 +599,22 @@ label {
 }
 
 input {
-  width: 100%;
-  padding: 1.2rem 2rem;
-  margin: .8rem 0;
+  border-color: #1E0620;
+  border-width: .1rem;
   box-sizing: border-box;
+  margin: .8rem 0;
+  padding: 1.2rem 2rem;
+  width: 100%;
 }
 
 textarea {
-  min-height: 20rem;
-  width: 100%;
-  padding: 1.2rem 2rem;
-  margin: .8rem 0;
+  border-color: #1E0620;
+  border-width: .1rem;
   box-sizing: border-box;
+  margin: .8rem 0;
+  min-height: 20rem;
+  padding: 1.2rem 2rem;
+  width: 100%;
 }
 
 .button-container {
