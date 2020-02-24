@@ -53,7 +53,7 @@ article.section-intro {
   padding: 2.1rem 2rem;
   text-align: center;
   text-decoration: none;
-  width: 20rem;
+  width: 43%;
 }
 
 /* typography */
@@ -126,7 +126,7 @@ li {
 .summary-underline {
   background-color: #1E0620;
   height: .3rem;
-  width: 28rem;
+  width: 80%;
 }
 
 .intro h1 {
@@ -432,6 +432,10 @@ article.project-description {
   padding: 2rem 1.6rem;
 }
 
+.white-card, .clickable {
+  background-color: #fcfcfc;
+}
+
 .xtab {
   background: url('../images/xtab.png') left top no-repeat;
   background-size: 3rem auto;
@@ -522,8 +526,7 @@ article.project-description {
 }
 
 .personas-pic {
-  height: 20rem;
-  width: 20rem;
+  width: 35%;
 }
 
 .personas-name h4 {
@@ -635,13 +638,27 @@ button {
   text-align: center;
   text-decoration: none;
   -webkit-appearance: none;
-  width: 20rem;
+  width: 43%;
   border: 0;
 }
 
 /*tablet*/
 @media screen and (min-width: 768px) {
   /* structure */
+  article {
+    padding: 4rem 10rem;
+  }
+
+  /* typography */
+  p {
+    margin: 2rem;
+  }
+
+  .summary-underline {
+    background-color: #1E0620;
+    height: .3rem;
+    width: 90%;
+  }
 
   /* index */
     section.hero {
@@ -672,7 +689,7 @@ button {
       bottom: -3rem;
       right: 4rem;
       top: -3rem;
-      width: 43.5%;
+      width: 36%;
     }
 
     section.projects {
@@ -685,7 +702,7 @@ button {
       "header header"
       "projone projone"
       "projtwo projthree";
-      margin-top: 14rem;
+      margin: 14rem 4rem 0;
     }
 
     .projects h2 {
@@ -741,6 +758,234 @@ button {
     a.icon {
       margin: 2rem 4rem;
     }
+
+    /* about me */
+    section.about-me {
+      background-size: 200%;
+    }
+
+    .about-me img {
+      top: -4rem;
+      width: 45%;
+    }
+
+    .about-text {
+      margin: 0 4rem;
+      padding: 4rem;
+    }
+
+    /* project */
+    .cgs-header img {
+      width: 50%;
+    }
+
+    article.project-description {
+      padding: 34rem 0 4rem;
+    }
+
+    article.buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 90%;
+    }
+
+    .blue-box {
+      background-color: #BBDDE4;
+      padding: 44rem 0rem 0rem;
+      position: relative;
+      margin: 6rem 0 0;
+    }
+
+    .img-only {
+      padding: 2rem 4rem;
+    }
+
+    .blue-box img {
+      top: -4rem;
+      margin: 0;
+      position: absolute;
+      width: 43.5%;
+    }
+
+    .grey-box img {
+      width: 94%;
+    }
+
+    .grey-box, .grey-text-box {
+      background-color: #f2f2f2;
+    }
+
+    .grey-card {
+      margin: 4rem;
+      padding: 0;
+    }
+
+    .persona-one, .persona-two {
+      margin: 4rem;
+      padding: 4rem 6rem;
+    }
+
+    .persona-one {
+      margin-bottom: 2rem;
+    }
+
+    .persona-two {
+      margin-top: 2rem;
+    }
+
+    .white-card, .clickable {
+      background-color: #fcfcfc;
+    }
+
+    .problems, .considerations {
+      background-color: #f2f2f2;
+      margin: 4rem;
+    }
+
+    .considerations {
+      padding: 0 2rem;
+    }
+
+    .problems ul {
+      align-self: flex-start;
+      padding: 0 19rem 0 3rem;
+    }
+
+    .considerations ul {
+      align-self: flex-start;
+      padding: 0 3rem;
+    }
+
+    .solutions ul {
+      padding: 0 3rem;
+    }
+
+    .xtab {
+      background: url('../images/xtab.png') left top no-repeat;
+      background-size: 3rem auto;
+      min-height: 3rem;
+      padding-left: 3.2rem;
+    }
+
+    .extab {
+      background: url('../images/exclaimtab.png') left top no-repeat;
+      background-size: 3rem auto;
+      min-height: 3.5rem;
+      padding-left: 3.2rem;
+    }
+
+    .checktab {
+      background: url('../images/checktab.png') left top no-repeat;
+      background-size: 3rem auto;
+      min-height: 3.5rem;
+      padding-left: 3.2rem;
+    }
+
+    .full-width {
+      padding: 0;
+      margin-bottom: 3rem;
+      width: 100%;
+    }
+
+    .bar-graph {
+      width: 100%;
+    }
+
+    .bar-graph li {
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .bar-graph li p {
+      align-items: center;
+      display: flex;
+      font-weight: 600;
+      justify-content: space-around;
+      position: relative;
+      z-index: 1;
+    }
+
+    .bar-graph li p span {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 80px;
+      padding-right: 1rem;
+    }
+
+    .bar-graph li::before {
+      background: linear-gradient(270deg, #A7F2EB 0%, #B0E7C8 100%);
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+    }
+
+    article.section-intro {
+      padding: 4rem 10rem;
+    }
+
+    .section-intro h5 {
+      margin-top: 2rem;
+    }
+
+    .storage-logos img {
+      height: 6rem;
+      width: auto;
+    }
+
+    .storage-logos {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .personas-name h4 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin: 2rem;
+    }
+
+    .personas-info h4 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 2rem;
+    }
+
+    ol {
+      align-items: flex-start;
+      list-style: decimal;
+      margin: 1.6rem 2rem;
+      text-align: left;
+    }
+
+    .personas-quote {
+      margin: 2rem 0rem;
+    }
+
+    .thin-image {
+      margin: 0;
+      padding: 0;
+    }
+
+    .thin-image img {
+      width: 91.5%;
+    }
+
+    /* contact */
+    section.contact {
+      background-size: 182%;
+    }
+
+    article.form {
+      background-color: #f2f2f2;
+      box-shadow: 0px 4px 4px rgba(30, 6, 32, 0.25), 0px -1px 4px rgba(30, 6, 32, 0.25);
+      display: block;
+      margin: 4rem;
+      padding: 2rem;
+    }
 }
 
 /*desktop*/
@@ -778,6 +1023,7 @@ button {
   }
 
   p {
+    font-size: 1.8rem;
     margin: 2rem 0;
   }
 
@@ -1057,14 +1303,25 @@ button {
     margin-top: 4rem;
   }
 
+  article.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 55%;
+  }
+
   .white-box {
     padding: 6rem 32rem;
+  }
+
+  .clickable {
+    padding: 6rem 32rem 2rem;
   }
 
   .summary-underline {
     background-color: #1E0620;
     height: .3rem;
-    width: 61rem;
+    width: 76%;
   }
 
   .blue-box {
@@ -1232,22 +1489,6 @@ button {
     z-index: 0;
   }
 
-  .bar-graph li.percent-40::before {
-    width: 40%;
-  }
-
-  .bar-graph li.percent-45::before {
-    width: 45%;
-  }
-
-  .bar-graph li.percent-55::before {
-    width: 55%;
-  }
-
-  .bar-graph li.percent-80::before {
-    width: 80%;
-  }
-
   .storage-logos img {
     height: 10rem;
     width: auto;
@@ -1257,11 +1498,6 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .personas-pic {
-    height: 20rem;
-    width: 20rem;
   }
 
   .personas-name h4 {
@@ -1295,5 +1531,30 @@ button {
   .thin-image img {
     margin: 0;
     width: 100%;
+  }
+
+  /* contact */
+  section.contact {
+    background-size: 100%;
+    margin: 8rem;
+  }
+
+  article.contact-intro {
+    background-color: #fcfcfc;
+    padding: 4rem 32rem;
+  }
+
+  .contact-intro a  {
+    font-size: 2.4rem;
+  }
+
+  .contact-intro h5  {
+    font-size: 2.4rem;
+  }
+
+  article.form {
+    margin: 4rem;
+    padding: 4rem;
+    width: 60%;
   }
 }
