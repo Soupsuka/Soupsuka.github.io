@@ -47,13 +47,12 @@ article.section-intro {
   background-color: #581E59;
   border-radius: 3rem;
   color: #fcfcfc;
-  height: 6rem;
   margin: 2rem 0;
   line-height: 1.8rem;
-  padding: 2.1rem 2rem;
+  padding: 2rem;
   text-align: center;
   text-decoration: none;
-  width: 43%;
+  width: 20rem;
 }
 
 /* typography */
@@ -526,7 +525,7 @@ article.project-description {
 }
 
 .personas-pic {
-  width: 35%;
+  width: 20rem;
 }
 
 .personas-name h4 {
@@ -989,11 +988,8 @@ button {
 }
 
 /*desktop*/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   /* structure */
-  .container {
-  }
-
   section {
     margin: 0;
   }
@@ -1333,14 +1329,14 @@ button {
 
   article.why-ttrpgs {
     align-items: flex-start;
-    padding: 4rem 20rem 4rem 0;
+    padding: 4rem 22rem 4rem 0;
   }
 
   .blue-box img {
     bottom: -4rem;
     left: 8rem;
     top: -4rem;
-    width: 31%;
+    width: 34%;
   }
 
   article.section-intro {
