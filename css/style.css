@@ -679,21 +679,23 @@ button {
   }
 
   .summary-underline {
-    background-color: #1E0620;
-    height: .3rem;
     width: 90%;
+  }
+
+  /* navbar */
+  a.logo {
+    margin: 2rem 4rem;
+  }
+
+  a.icon {
+    margin: 2rem 4rem;
   }
 
   /* index */
     section.hero {
-      background: url("../images/purple-screentone.png") no-repeat;
-      background-color: #fcfcfc;
-      background-size: cover;
-      color: #fcfcfc;
       display: block;
       margin: 8rem 0;
       padding: 5rem 4rem 5rem 2.4rem;
-      position: relative;
     }
 
     article.intro {
@@ -756,10 +758,7 @@ button {
 
     article.project-one {
       align-items: flex-start;
-      background-color: #54ACBF;
-      background-image: url("../images/cloud-giant-logo.png");
       background-position: 92%;
-      background-repeat: no-repeat;
       background-size: 25%;
       padding: 4rem;
     }
@@ -772,15 +771,6 @@ button {
 
     article.project-two, article.project-three {
       padding: 4rem 1rem;
-    }
-
-    /* navbar */
-    a.logo {
-      margin: 2rem 4rem;
-    }
-
-    a.icon {
-      margin: 2rem 4rem;
     }
 
     /* about me */
@@ -814,30 +804,16 @@ button {
       width: 90%;
     }
 
-    .blue-box {
-      background-color: #BBDDE4;
-      padding: 44rem 0rem 0rem;
-      position: relative;
-      margin: 6rem 0 0;
-    }
-
     .img-only {
       padding: 2rem 4rem;
     }
 
     .blue-box img {
-      top: -4rem;
-      margin: 0;
-      position: absolute;
       width: 43.5%;
     }
 
     .grey-box img {
       width: 94%;
-    }
-
-    .grey-box, .grey-text-box {
-      background-color: #f2f2f2;
     }
 
     .grey-card {
@@ -856,10 +832,6 @@ button {
 
     .persona-two {
       margin-top: 2rem;
-    }
-
-    .white-card, .clickable {
-      background-color: #fcfcfc;
     }
 
     .problems, .considerations {
@@ -885,68 +857,13 @@ button {
       padding: 0 3rem;
     }
 
-    .xtab {
-      background: url('../images/xtab.png') left top no-repeat;
-      background-size: 3rem auto;
-      min-height: 3rem;
-      padding-left: 3.2rem;
-    }
-
-    .extab {
-      background: url('../images/exclaimtab.png') left top no-repeat;
-      background-size: 3rem auto;
-      min-height: 3.5rem;
-      padding-left: 3.2rem;
-    }
-
-    .checktab {
-      background: url('../images/checktab.png') left top no-repeat;
-      background-size: 3rem auto;
-      min-height: 3.5rem;
-      padding-left: 3.2rem;
-    }
-
-    .full-width {
-      padding: 0;
-      margin-bottom: 3rem;
-      width: 100%;
-    }
-
-    .bar-graph {
-      width: 100%;
-    }
-
-    .bar-graph li {
-      margin-bottom: 1rem;
-      position: relative;
-    }
-
     .bar-graph li p {
-      align-items: center;
-      display: flex;
-      font-weight: 600;
       justify-content: space-around;
       padding: 0 12rem;
-      position: relative;
-      z-index: 1;
     }
 
     .bar-graph li p strong {
-      font-weight: bold;
-      font-size: 3rem;
-      line-height: 8rem;
-      padding-right: 1rem;
       width: 17%;
-    }
-
-    .bar-graph li::before {
-      background: linear-gradient(270deg, #A7F2EB 0%, #B0E7C8 100%);
-      content: '';
-      display: block;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      z-index: 0;
     }
 
     article.section-intro {
@@ -957,58 +874,12 @@ button {
       margin-top: 2rem;
     }
 
-    .storage-logos img {
-      height: 6rem;
-      width: auto;
-    }
-
-    .storage-logos {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-    .personas-name h4 {
-      font-size: 3rem;
-      font-weight: bold;
-      margin: 2rem;
-    }
-
-    .personas-info h4 {
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin: 2rem;
-    }
-
-    ol {
-      align-items: flex-start;
-      list-style: decimal;
-      margin: 1.6rem 2rem;
-      text-align: left;
-    }
-
-    .personas-quote {
-      margin: 2rem 0rem;
-    }
-
-    .thin-image {
-      margin: 0;
-      padding: 0;
-    }
-
-    .thin-image img {
-      width: 91.5%;
-    }
-
     /* contact */
     section.contact {
       background-size: 182%;
     }
 
     article.form {
-      background-color: #f2f2f2;
-      box-shadow: 0px 4px 4px rgba(30, 6, 32, 0.25), 0px -1px 4px rgba(30, 6, 32, 0.25);
-      display: block;
       margin: 4rem;
       padding: 2rem;
     }
