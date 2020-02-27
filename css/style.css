@@ -341,7 +341,7 @@ article.project-one {
 
 /* about me */
 section.about-me {
-  background: url("../images/purple-screentone.png") top no-repeat, url("../images/green-screentone.png") bottom no-repeat;
+  background: url("../images/purple-screentone-two.png") top no-repeat, url("../images/green-screentone-two.png") bottom no-repeat;
   background-color: #fcfcfc;
   background-size: 270rem;
   margin: 6rem 0 4rem 0;
@@ -352,7 +352,7 @@ section.about-me {
 .about-me img {
   margin: 0;
   position: absolute;
-  top: -2rem;
+  top: -4rem;
   width: 91.5%;
 }
 
@@ -776,7 +776,7 @@ button {
 
     /* about me */
     section.about-me {
-      background-size: 200%;
+      background-size: 215%;
     }
 
     .about-me img {
@@ -937,6 +937,26 @@ button {
     display: none;
   }
 
+  /* footer */
+  footer {
+    margin: 6rem 4rem 4rem;
+  }
+
+  footer h4 {
+    font-size: 3rem;
+    padding-top: 4rem;
+  }
+
+  .exclaim {
+    font-size: 3.6rem;
+  }
+
+  footer img {
+    height: 4rem;
+    margin: 4rem 2rem;
+    width: 4rem;
+  }
+
   /* index */
   section.hero {
     margin: 8rem 4rem;
@@ -959,9 +979,36 @@ button {
     padding: 4rem 14rem;
   }
 
+  .project-one:hover {
+    border-bottom: .6rem solid #A7F2EB;
+    border-left: .6rem solid #A7F2EB;
+    box-shadow: 0 0 .8rem #A7F2EB;
+    opacity: 90%;
+    transform: translate(.2rem, -.2rem);
+    transition: all 250ms linear;
+  }
+
+  .project-two:hover {
+    border-bottom: .6rem solid #C3AFE9;
+    border-left: .6rem solid #C3AFE9;
+    box-shadow: 0 0 .8rem #C3AFE9;
+    opacity: 90%;
+    transform: translate(.2rem, -.2rem);
+    transition: all 250ms linear;
+  }
+
+  .project-three:hover {
+    border-bottom: .6rem solid #AEFFD1;
+    border-left: .6rem solid #AEFFD1;
+    box-shadow: 0 0 .8rem #AEFFD1;
+    opacity: 90%;
+    transform: translate(.2rem, -.2rem);
+    transition: all 250ms linear;
+  }
+
   /* about me */
   section.about-me {
-    background-size: 100% 30%;
+    background-size: 100%;
     margin: 6rem 4rem 4rem;
     padding: 0;
   }
@@ -970,7 +1017,7 @@ button {
     bottom: -4rem;
     float: right;
     left: 4rem;
-    width: 28%;
+    width: 30%;
   }
 
   .about-text {
@@ -1021,6 +1068,11 @@ button {
 
   article.buttons {
     width: 68%;
+  }
+
+  a.button:hover {
+    background-color: #260126;
+    transition: all 250ms linear;
   }
 
   .summary {
@@ -1272,7 +1324,7 @@ button {
   }
 
   article.intro {
-    margin-right: 54rem;
+    margin-right: 44rem;
   }
 
   .intro h1 {
@@ -1288,7 +1340,7 @@ button {
   .intro h5 {
     font-size: 3rem;
     line-height: 4rem;
-    margin: 4rem 8rem 0 1.6rem;
+    margin: 4rem 16rem 0 1.6rem;
   }
 
   .hero img {
@@ -1337,26 +1389,14 @@ button {
     width: 40%;
   }
 
-  /* footer */
-  footer h4 {
-    font-size: 3.6rem;
-    padding-top: 4rem;
-  }
-
-  .exclaim {
-    font-size: 3.6rem;
-  }
-
-  footer img {
-    height: 4rem;
-    margin: 4rem 2rem;
-    width: 4rem;
-  }
-
   /* about me */
   section.about-me {
     background-size: 100% 32%;
     margin: 6rem 8rem 4rem;
+  }
+
+  .about-me img {
+    width: 28%;
   }
 
   .about-text {
@@ -1373,6 +1413,10 @@ button {
     width: 55%;
   }
 
+  .summary-underline {
+    width: 76%;
+  }
+
   .problems {
     margin: 2rem 0 2rem 8rem;
   }
@@ -1386,11 +1430,12 @@ button {
   }
 
   article.why-ttrpgs {
-    padding: 4rem 22rem 4rem 0;
+    padding: 4rem 12rem 4rem 0;
   }
 
   .blue-box img {
     left: 8rem;
+    width: 31%;
   }
 
   .white-box {
@@ -1419,6 +1464,7 @@ button {
 
   .grey-box a {
     margin: 0 auto;
+    margin-top: 4rem;
   }
 
   .grey-text-box {
