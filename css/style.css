@@ -161,6 +161,7 @@ li {
 }
 
 a {
+  color: #54ACBF;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.8rem;
   text-decoration: none;
@@ -1521,5 +1522,400 @@ button {
 
   article.form {
     padding: 4rem 6rem;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  /* typography */
+  h1 {
+    font-size: 11.2rem;
+    line-height: 11.2rem;
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+    margin: 4rem 0;
+  }
+
+  h3 {
+    font-size: 6rem;
+    line-height: 6rem;
+    margin: 4rem 0;
+  }
+
+  h4 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  h5 {
+    font-size: 3.6rem;
+    line-height: 5rem;
+    margin: 4rem 0;
+  }
+
+  p {
+    font-size: 3.6rem;
+    line-height: 5rem;
+    margin: 4rem 0;
+  }
+
+  a {
+    font-size: 3.6rem;
+  }
+
+  .underline {
+    border-bottom: .6rem solid;
+  }
+
+  li {
+    font-size: 3.6rem;
+    line-height: 6rem;
+  }
+
+  /* navigation bar */
+  nav img {
+    width: 66%;
+  }
+
+  a.logo {
+    margin: 6rem 16rem;
+  }
+
+  .navbar #nav-links {
+    margin: 0 8rem;
+  }
+
+  #nav-links a {
+    padding: 2rem 8rem;
+    font-size: 3.2rem;
+  }
+
+  /* footer */
+  footer {
+    margin: 12rem 8rem 8rem;
+  }
+
+  footer h4 {
+    font-size: 6rem;
+    padding-top: 8rem;
+  }
+
+  .exclaim {
+    font-size: 7.2rem;
+  }
+
+  footer img {
+    height: 8rem;
+    margin: 8rem 4rem;
+    width: 8rem;
+  }
+
+  /* index */
+  section.hero {
+    margin: 16rem;
+    padding: 16rem 12rem 16rem 8.8rem;
+  }
+
+  article.intro {
+    margin-right: 80rem;
+  }
+
+  .intro h1 {
+    font-size: 12.8rem;
+    margin-bottom: 4rem;
+  }
+
+  .intro h4 {
+    font-size: 9.6rem;
+    line-height: 9.6rem;
+  }
+
+  .intro h5 {
+    font-size: 6rem;
+    line-height: 8rem;
+    margin: 8rem 32rem 0 3.2rem;
+  }
+
+  .hero img {
+    bottom: -4rem;
+    top: -4rem;
+    width: 36%;
+  }
+
+  section.projects {
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    margin: 14rem 16rem 0rem;
+  }
+
+  .projects article h2 {
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+  }
+
+  .projects article h4 {
+    font-size: 6rem;
+  }
+
+  .projects article h5 {
+    font-size: 4.8rem;
+    line-height: 6rem;
+    margin: 4rem 0 0;
+  }
+
+  article.project-one {
+    background-position: 82%;
+    background-size: 20%;
+    padding: 20rem 36rem;
+  }
+
+  .project-one h5 {
+    text-align: left;
+    width: 50%;
+  }
+
+  article.project-two, article.project-three {
+    background-size: cover;
+    padding: 24rem 0rem;
+  }
+
+  /* about me */
+  section.about-me {
+    background-size: 126%;
+    margin: 12rem 16rem 8rem;
+  }
+
+  .about-me img {
+    left: 8rem;
+    width: 32%;
+  }
+
+  .about-text {
+    margin: 0 8rem 0 88rem;
+    padding: 8rem 10rem;
+  }
+
+  /* project */
+  article.project-description {
+    padding: 100rem 0 8rem;
+  }
+
+  .project-description h5 {
+    margin-top: 8rem;
+  }
+
+  .button {
+    border-radius: 6rem;
+    margin: 4rem 0;
+    line-height: 3.6rem;
+    padding: 4rem;
+    width: 40rem;
+  }
+
+  article.buttons {
+    width: 50%;
+  }
+
+  .summary-underline {
+    height: .6rem;
+    width: 95%;
+  }
+
+  .problems {
+    margin: 4rem 0 4rem 16rem;
+  }
+
+  .considerations {
+    margin: 4rem 16rem 4rem 0;
+  }
+
+  .blue-box {
+    padding: 0rem 0rem 0rem 110rem;
+  }
+
+  article.why-ttrpgs {
+    padding: 8rem 40rem 8rem 0;
+  }
+
+  .blue-box img {
+    left: 16rem;
+    width: 30.5%;
+  }
+
+  .white-box {
+    padding: 12rem 64rem;
+  }
+
+  .clickable {
+    padding: 12rem 64rem 4rem;
+  }
+
+  article.section-intro {
+    padding: 8rem 64rem;
+  }
+
+  .section-intro h5 {
+    margin: 8rem 0 16rem;
+  }
+
+  .img-only {
+    padding: 12rem;
+  }
+
+  .img-only img {
+    padding: 4rem;
+    width: 50%;
+  }
+
+  article.grey-box {
+    padding: 16rem;
+  }
+
+  .grey-box p {
+    padding: 0 22rem;
+  }
+
+  .grey-box a {
+    margin: 0 auto;
+    margin-top: 8rem;
+  }
+
+  .grey-text-box {
+    padding: 16rem 64rem;
+  }
+
+  .grey-card {
+    padding: 8rem 10rem;
+  }
+
+  .persona-one {
+    margin: 0 4rem 16rem 16rem;
+    padding: 8rem 15rem;
+    width: 42%;
+  }
+
+  .persona-two {
+    margin: 0 16rem 16rem 4rem;
+    padding: 8rem 15rem 38rem;
+    width: 42%;
+  }
+
+  .personas-pic {
+    width: 40rem;
+  }
+
+  .personas-name h4 {
+    font-size: 6rem;
+    margin: 4rem;
+  }
+
+  .personas-info h4 {
+    font-size: 3.6rem;
+    margin: 4rem;
+  }
+
+  .xtab {
+    background-size: 6rem auto;
+    min-height: 6.5rem;
+    padding-left: 8.4rem;
+  }
+
+  .extab {
+    background-size: 6rem auto;
+    min-height: 6.5rem;
+    padding-left: 8.4rem;
+  }
+
+  .checktab {
+    background-size: 6rem auto;
+    min-height: 6.5rem;
+    padding-left: 8.4rem;
+  }
+
+  .problems ul, .considerations ul {
+    align-self: flex-start;
+    padding: 0 6rem;
+  }
+
+  .full-width {
+    margin-bottom: 6rem;
+  }
+
+  .bar-graph li p {
+    padding: 0 3rem;
+  }
+
+  .bar-graph li p strong {
+    font-size: 7.2rem;
+    padding: 0 2rem;
+    width: 50%;
+  }
+
+  .storage-logos img {
+    height: 20rem;
+    margin: 4rem 3rem;
+  }
+
+  ol {
+    margin: 4rem 8rem;
+  }
+
+  .thin-image {
+    margin: 16rem;
+  }
+
+  /* contact */
+  section.contact {
+    background-size: 117%;
+    margin: 16rem;
+  }
+
+  article.contact-intro {
+    padding: 8rem 53rem;
+  }
+
+  article.form {
+    margin: 8rem;
+    padding: 8rem 12rem;
+  }
+
+  .contact-intro a  {
+    font-size: 4.8rem;
+  }
+
+  .contact-intro h5  {
+    font-size: 4.8rem;
+  }
+
+  label {
+    font-size: 4.8rem;
+    line-height: 6rem;
+    margin-top: 4rem;
+  }
+
+  input {
+    border-width: .2rem;
+    margin: 1.6rem 0;
+    padding: 2.4rem 4rem;
+  }
+
+  textarea {
+    border-width: .2rem;
+    margin: 1.6rem 0 6rem;
+    min-height: 40rem;
+    padding: 2.4rem 4rem;
+  }
+
+  button {
+    border-radius: 6rem;
+    font-size: 3.6rem;
+    height: 12rem;
+    margin: 4rem 0;
+    line-height: 3.6rem;
+    padding: 4.2rem 4rem;
+    width: 35%;
   }
 }
