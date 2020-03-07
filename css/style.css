@@ -15,6 +15,7 @@ body {
 .container {
   background-color: #fcfcfc;
   margin: 0 auto;
+  max-width: 37.5rem;
 }
 
 /* structure */
@@ -338,7 +339,8 @@ article.project-one {
 
 .project-three {
   background-color: #7ED9A5;
-  background: url("../images/laughing.png") bottom no-repeat, #7ED9A5;
+  background: url("../images/handshake-solid.svg") bottom no-repeat, #7ED9A5;
+  opacity: 75%;
 }
 
 /* about me */
@@ -655,6 +657,10 @@ button {
 
 /* mobile large */
 @media screen and (min-width: 425px) {
+  .container {
+    max-width: 42.5rem;
+  }
+
   .hero img {
     width: 83%;
   }
@@ -672,6 +678,10 @@ button {
 /*tablet*/
 @media screen and (min-width: 768px) {
   /* structure */
+  .container {
+    max-width: 76.8rem;
+  }
+
   article {
     padding: 4rem 10rem;
   }
@@ -890,7 +900,11 @@ button {
 }
 
 /*small desktop*/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 102.4rem;
+  }
+
   /* navigation bar */
   nav {
     background-color: #fcfcfc;
@@ -1000,14 +1014,14 @@ button {
     transition: all 250ms linear;
   }
 
-  .project-three:hover {
+  /* .project-three:hover {
     border-bottom: .6rem solid #AEFFD1;
     border-left: .6rem solid #AEFFD1;
     box-shadow: 0 0 .8rem #AEFFD1;
     opacity: 90%;
     transform: translate(.2rem, -.2rem);
     transition: all 250ms linear;
-  }
+  } */
 
   /* about me */
   section.about-me {
@@ -1285,7 +1299,7 @@ button {
 }
 
 /*desktop*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   /* structure */
   .container {
     max-width: 144rem;
