@@ -332,7 +332,7 @@ article.project-one {
 }
 
 .project-two {
-  background: linear-gradient(180deg, #581E59 0%, rgba(88, 30, 89, 0.25) 100%), linear-gradient(0deg, #581E59, #581E59), url("../images/blocjams-code.png");
+  background: linear-gradient(180deg, #581E59 0%, rgba(88, 30, 89, 0.25) 100%), linear-gradient(0deg, #581E59, #581E59), url("../images/blocjams-code.PNG");
   background-blend-mode: normal, overlay, normal;
 }
 
