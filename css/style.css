@@ -1001,6 +1001,8 @@ button {
     border-left: .6rem solid #A7F2EB;
     box-shadow: 0 0 .8rem #A7F2EB;
     opacity: 90%;
+    padding-top: 3.4rem;
+    padding-right: 13.4rem;
     transform: translate(.2rem, -.2rem);
     transition: all 250ms linear;
   }
@@ -1010,6 +1012,8 @@ button {
     border-left: .6rem solid #C3AFE9;
     box-shadow: 0 0 .8rem #C3AFE9;
     opacity: 90%;
+    padding-top: 3.4rem;
+    padding-right: .4rem;
     transform: translate(.2rem, -.2rem);
     transition: all 250ms linear;
   }
@@ -1019,6 +1023,8 @@ button {
     border-left: .6rem solid #AEFFD1;
     box-shadow: 0 0 .8rem #AEFFD1;
     opacity: 90%;
+    padding-bottom: 3.4rem;
+    padding-left: .4rem;
     transform: translate(.2rem, -.2rem);
     transition: all 250ms linear;
   } */
