@@ -337,9 +337,9 @@ article.project-one {
   background-blend-mode: normal, overlay, normal;
 }
 
-.project-three {
+article.project-three {
   background-color: #7ED9A5;
-  background: url("../images/handshake-solid.svg") bottom no-repeat, #7ED9A5;
+  background: url("../images/card-exchange.png") center no-repeat, #66A488;
   opacity: 75%;
 }
 
@@ -996,6 +996,10 @@ button {
     padding: 4rem 14rem;
   }
 
+  article.project-two {
+    padding: 6rem 1rem;
+  }
+
   .project-one:hover {
     border-bottom: .6rem solid #A7F2EB;
     border-left: .6rem solid #A7F2EB;
@@ -1407,7 +1411,11 @@ button {
     width: 50%;
   }
 
-  article.project-two, article.project-three {
+  article.project-two {
+    padding: 11.7rem 0rem;
+  }
+
+  article.project-three {
     padding: 11.7rem 0rem;
   }
 
