@@ -339,8 +339,7 @@ article.project-one {
 
 article.project-three {
   background-color: #7ED9A5;
-  background: url("../images/card-exchange.png") center no-repeat, #66A488;
-  opacity: 75%;
+  background: url("../images/wavz-logo.png") center no-repeat, #7ED9A5;
 }
 
 /* about me */
@@ -1000,6 +999,10 @@ button {
     padding: 6rem 1rem;
   }
 
+  article.project-three {
+    padding: 4.5rem 1rem;
+  }
+
   .project-one:hover {
     border-bottom: .6rem solid #A7F2EB;
     border-left: .6rem solid #A7F2EB;
@@ -1022,16 +1025,16 @@ button {
     transition: all 250ms linear;
   }
 
-  /* .project-three:hover {
+  .project-three:hover {
     border-bottom: .6rem solid #AEFFD1;
     border-left: .6rem solid #AEFFD1;
     box-shadow: 0 0 .8rem #AEFFD1;
     opacity: 90%;
-    padding-bottom: 3.4rem;
+    padding-top: 3.4rem;
     padding-left: .4rem;
     transform: translate(.2rem, -.2rem);
     transition: all 250ms linear;
-  } */
+  }
 
   /* about me */
   section.about-me {
