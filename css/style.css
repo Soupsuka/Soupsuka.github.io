@@ -1422,6 +1422,21 @@ button {
     padding: 11.7rem 0rem;
   }
 
+  .project-one:hover {
+    padding-top: 9.6rem;
+    padding-right: 17.4rem;
+  }
+
+  .project-two:hover {
+    padding-top: 11.1rem;
+    padding-right: -.4rem;
+  }
+
+  .project-three:hover {
+    padding-top: 11.1rem;
+    padding-left: -.4rem;
+  }
+
   /* navigation bar */
   nav img {
     width: 40%;
