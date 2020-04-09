@@ -370,7 +370,7 @@ section.about-me {
   text-decoration: underline;
 }
 
-/* project */
+/* cgs-project */
 .cgs-header {
   background: linear-gradient(180deg, rgba(135, 216, 255, 0.05) 0%, #7ABECC 100%);
   background-blend-mode: darken;
@@ -571,6 +571,21 @@ ol {
 
 .thin-image img {
   width: 91.5%;
+}
+
+/* wavz-project */
+.wavz-header {
+  background: linear-gradient(180deg, rgba(135, 216, 255, 0.05) 0%, #7ABECC 100%);
+  background-blend-mode: darken;
+  margin: 0;
+  padding: 6rem 1.6rem;
+  position: relative;
+}
+
+.wavz-header img {
+  margin: 0;
+  position: absolute;
+  width: 80%;
 }
 
 /* contact */
@@ -801,7 +816,7 @@ button {
       padding: 4rem;
     }
 
-    /* project */
+    /* cgs-project */
     .cgs-header img {
       width: 50%;
     }
@@ -885,6 +900,30 @@ button {
 
     .section-intro h5 {
       margin-top: 2rem;
+    }
+
+    /* wavz-project */
+    .wavz-header img {
+      width: 50%;
+    }
+
+    .physical, .digital {
+      background-color: #f2f2f2;
+      margin: 4rem;
+    }
+
+    .digital {
+      padding: 0 2rem;
+    }
+
+    .physical ul {
+      align-self: flex-start;
+      padding: 0 19rem 0 3rem;
+    }
+
+    .digital ul {
+      align-self: flex-start;
+      padding: 0 3rem;
     }
 
     /* contact */
@@ -1058,7 +1097,7 @@ button {
     top: -4rem;
   }
 
-  /* project */
+  /* cgs-project */
   .cgs-main {
     display: grid;
     grid-column-gap: 4rem;
@@ -1286,6 +1325,219 @@ button {
     margin: 0;
     width: 100%;
   }
+
+  /* wavz-project */
+  .wavz-main {
+    display: grid;
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "wavz-header wavz-header"
+    "summary summary"
+    "problems-summary problems-summary"
+    "physical digital"
+    "solutions solutions"
+    "research research"
+    "branding branding"
+    "design design"
+    "conclusion conclusion"
+    ;
+  }
+
+  .wavz-header {
+    grid-area: wavz-header;
+    margin: 0;
+  }
+
+  .wavz-header img {
+    width: 39%;
+  }
+
+  article.project-description {
+    padding: 35rem 0 4rem;
+    position: relative;
+  }
+
+  .project-description h5 {
+    margin-top: 4rem;
+  }
+
+  article.buttons {
+    width: 68%;
+  }
+
+  a.button:hover {
+    background-color: #260126;
+    transition: all 250ms linear;
+  }
+
+  .summary {
+    grid-area: summary;
+  }
+
+  .summary-underline {
+    background-color: #1E0620;
+    height: .3rem;
+    width: 76%;
+  }
+
+  .problems-summary {
+    grid-area: problems-summary;
+  }
+
+  .physical {
+    background-color: #f2f2f2;
+    grid-area: physical;
+    margin: 2rem 0 2rem 4rem;
+  }
+
+  .digital {
+    grid-area: digital;
+    margin: 2rem 4rem 2rem 0;
+    padding: 0;
+  }
+
+  .solutions {
+    grid-area: solutions;
+  }
+
+  .user-research {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: research;
+  }
+
+  .branding {
+    grid-area: branding;
+  }
+
+  .ux-design {
+    grid-area: design;
+  }
+
+  .conclusion {
+    grid-area: conclusion;
+  }
+
+  .white-box {
+    padding: 6rem 11rem;
+  }
+
+  .clickable {
+    padding: 6rem 11rem 2rem;
+  }
+
+  article.section-intro {
+    padding: 4rem 15rem;
+  }
+
+  .section-intro h5 {
+    margin: 2rem 0 4rem;
+  }
+
+  .img-only {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 4rem;
+  }
+
+  .img-only img {
+    padding: 2rem;
+    width: 50%;
+  }
+
+  article.grey-box {
+    display: grid;
+    grid-column-gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "grey-h3 grey-img"
+    "grey-p grey-img"
+    "grey-a grey-a"
+    ;
+    padding: 4rem;
+  }
+
+  .grey-box img {
+    grid-area: grey-img;
+  }
+
+  .grey-box p {
+    grid-area: grey-p;
+    padding: 0 1rem;
+  }
+
+  .grey-box h3 {
+    grid-area: grey-h3;
+  }
+
+  .grey-box a {
+    grid-area: grey-a;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+
+  .grey-text-box {
+    padding: 8rem 11rem;
+  }
+
+  .grey-card {
+    background-color: #F2F2F2;
+    margin: 0;
+    padding: 2rem 5rem;
+  }
+
+  .persona-one {
+    margin: 0 2rem 4rem 4rem;
+    padding: 4rem;
+    max-width: 42%;
+    width: 40%;
+  }
+
+  .persona-two {
+    margin: 0 4rem 4rem 2rem;
+    padding: 4rem 4rem 22rem 4rem;
+    max-width: 42%;
+    width: 40%;
+  }
+
+  .physical ul, .digital ul {
+    align-self: flex-start;
+    padding: 0 3rem;
+  }
+
+  .bar-graph li p {
+    padding: 0 3rem;
+  }
+
+  .bar-graph li p strong {
+    font-size: 3.6rem;
+    padding: 0 1rem;
+    width: 15%;
+  }
+
+  .storage-logos img {
+    height: 10rem;
+  }
+
+  ol {
+    margin: 2rem 4rem;
+  }
+
+  .thin-image {
+    margin: 8rem;
+  }
+
+  .thin-image img {
+    margin: 0;
+    width: 100%;
+  }
+
 
   /* contact */
   section.contact {
@@ -1558,6 +1810,15 @@ button {
 
   ol {
     margin: 1.6rem 2rem;
+  }
+
+  /* wavz-project */
+  .physical {
+    margin: 2rem 0 2rem 8rem;
+  }
+
+  .digital {
+    margin: 2rem 8rem 2rem 0;
   }
 
   /* contact */
